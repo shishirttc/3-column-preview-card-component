@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+/* font-family: 'Big Shoulders Display', cursive; for header */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+/* font-family: 'Lexend Deca', sans-serif;  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: hsl(0, 0%, 95%);
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    width: 60%;
+    margin: auto;
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.box{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.box h1{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    font-size: 40px;
+}
+
+.box p{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.box button{
+    border: none;
+    margin: 50px 0 10px 0;
+    padding: 15px 0;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 80%;
+}
+
+.box button:hover{
+    border: 2px solid white;
+    color: white;
+    background: rgba(0, 0, 0, 0);
+}
+
+
+
+.box1{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.box2{
+    background-color: hsl(184, 100%, 22%);
+}
+.box3{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+.box1 button{
+    color: hsl(31, 77%, 52%);
+}
+
+.box2 button{
+    color: hsl(184, 100%, 22%);
+}
+
+.box3 button{
+    color: hsl(179, 100%, 13%);
+}
+
+
+
+@media  (max-width: 768px){
+    main{
+        height: 100%;
+    }
+    .container{
+        width: 80%;
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 80px;
+    }
+
+    .box{
+        gap: 50px;
+        padding: 60px;
+    }
+
+    .box1{
+        border-radius: 10px 10px 0 0;
+    }
+
+    .box3{
+        border-radius: 0 0 10px 10px;
+    }
+}
